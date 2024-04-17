@@ -1,7 +1,10 @@
 version: '2'
 services:
-  app:
-    build: ./docker/
+  nginx:
+    build: 
+      context: ./docker/
+      dockerfile: Dockerfile
+    container_name: nginx
     ports:
       - "8080:80"
       - "1935:1935"
