@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "whisper-streaming-client"
+version = "0.1.0"
+description = ""
+authors = ["ShunyaYamagami <yamagami@naxa.co.jp>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pyaudio = "^0.2.14"
+pydub = "^0.25.1"
+
+[tool.poetry.group.dev.dependencies]
+notebook = "^7.0.6"
+
+[tool.ruff]
+line-length = 130
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
